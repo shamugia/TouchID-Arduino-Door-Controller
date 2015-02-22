@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E452FB91A9A6CE1008EC352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E452FB81A9A6CE1008EC352 /* AppDelegate.swift */; };
+		5E452FBB1A9A6CE1008EC352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E452FBA1A9A6CE1008EC352 /* ViewController.swift */; };
+		5E452FBE1A9A6CE1008EC352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E452FBC1A9A6CE1008EC352 /* Main.storyboard */; };
+		5E452FC01A9A6CE1008EC352 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E452FBF1A9A6CE1008EC352 /* Images.xcassets */; };
+		5E452FC31A9A6CE1008EC352 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E452FC11A9A6CE1008EC352 /* LaunchScreen.xib */; };
+		5E452FCF1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E452FCE1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E452FC91A9A6CE1008EC352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E452FAB1A9A6CE1008EC352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E452FB21A9A6CE1008EC352;
+			remoteInfo = "TouchID Door Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E452FB31A9A6CE1008EC352 /* TouchID Door Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TouchID Door Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E452FB71A9A6CE1008EC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E452FB81A9A6CE1008EC352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E452FBA1A9A6CE1008EC352 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E452FBD1A9A6CE1008EC352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E452FBF1A9A6CE1008EC352 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E452FC21A9A6CE1008EC352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5E452FC81A9A6CE1008EC352 /* TouchID Door ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchID Door ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E452FCD1A9A6CE1008EC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E452FCE1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchID_Door_ControllerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E452FB01A9A6CE1008EC352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E452FC51A9A6CE1008EC352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E452FAA1A9A6CE1008EC352 = {
+			isa = PBXGroup;
+			children = (
+				5E452FB51A9A6CE1008EC352 /* TouchID Door Controller */,
+				5E452FCB1A9A6CE1008EC352 /* TouchID Door ControllerTests */,
+				5E452FB41A9A6CE1008EC352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E452FB41A9A6CE1008EC352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E452FB31A9A6CE1008EC352 /* TouchID Door Controller.app */,
+				5E452FC81A9A6CE1008EC352 /* TouchID Door ControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E452FB51A9A6CE1008EC352 /* TouchID Door Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E452FB81A9A6CE1008EC352 /* AppDelegate.swift */,
+				5E452FBA1A9A6CE1008EC352 /* ViewController.swift */,
+				5E452FBC1A9A6CE1008EC352 /* Main.storyboard */,
+				5E452FBF1A9A6CE1008EC352 /* Images.xcassets */,
+				5E452FC11A9A6CE1008EC352 /* LaunchScreen.xib */,
+				5E452FB61A9A6CE1008EC352 /* Supporting Files */,
+			);
+			path = "TouchID Door Controller";
+			sourceTree = "<group>";
+		};
+		5E452FB61A9A6CE1008EC352 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E452FB71A9A6CE1008EC352 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E452FCB1A9A6CE1008EC352 /* TouchID Door ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E452FCE1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift */,
+				5E452FCC1A9A6CE1008EC352 /* Supporting Files */,
+			);
+			path = "TouchID Door ControllerTests";
+			sourceTree = "<group>";
+		};
+		5E452FCC1A9A6CE1008EC352 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E452FCD1A9A6CE1008EC352 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E452FB21A9A6CE1008EC352 /* TouchID Door Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E452FD21A9A6CE1008EC352 /* Build configuration list for PBXNativeTarget "TouchID Door Controller" */;
+			buildPhases = (
+				5E452FAF1A9A6CE1008EC352 /* Sources */,
+				5E452FB01A9A6CE1008EC352 /* Frameworks */,
+				5E452FB11A9A6CE1008EC352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TouchID Door Controller";
+			productName = "TouchID Door Controller";
+			productReference = 5E452FB31A9A6CE1008EC352 /* TouchID Door Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E452FC71A9A6CE1008EC352 /* TouchID Door ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E452FD51A9A6CE1008EC352 /* Build configuration list for PBXNativeTarget "TouchID Door ControllerTests" */;
+			buildPhases = (
+				5E452FC41A9A6CE1008EC352 /* Sources */,
+				5E452FC51A9A6CE1008EC352 /* Frameworks */,
+				5E452FC61A9A6CE1008EC352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E452FCA1A9A6CE1008EC352 /* PBXTargetDependency */,
+			);
+			name = "TouchID Door ControllerTests";
+			productName = "TouchID Door ControllerTests";
+			productReference = 5E452FC81A9A6CE1008EC352 /* TouchID Door ControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E452FAB1A9A6CE1008EC352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "George Shamugia";
+				TargetAttributes = {
+					5E452FB21A9A6CE1008EC352 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5E452FC71A9A6CE1008EC352 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5E452FB21A9A6CE1008EC352;
+					};
+				};
+			};
+			buildConfigurationList = 5E452FAE1A9A6CE1008EC352 /* Build configuration list for PBXProject "TouchID Door Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E452FAA1A9A6CE1008EC352;
+			productRefGroup = 5E452FB41A9A6CE1008EC352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E452FB21A9A6CE1008EC352 /* TouchID Door Controller */,
+				5E452FC71A9A6CE1008EC352 /* TouchID Door ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E452FB11A9A6CE1008EC352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E452FBE1A9A6CE1008EC352 /* Main.storyboard in Resources */,
+				5E452FC31A9A6CE1008EC352 /* LaunchScreen.xib in Resources */,
+				5E452FC01A9A6CE1008EC352 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E452FC61A9A6CE1008EC352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E452FAF1A9A6CE1008EC352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E452FBB1A9A6CE1008EC352 /* ViewController.swift in Sources */,
+				5E452FB91A9A6CE1008EC352 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E452FC41A9A6CE1008EC352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E452FCF1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E452FCA1A9A6CE1008EC352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E452FB21A9A6CE1008EC352 /* TouchID Door Controller */;
+			targetProxy = 5E452FC91A9A6CE1008EC352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E452FBC1A9A6CE1008EC352 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E452FBD1A9A6CE1008EC352 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E452FC11A9A6CE1008EC352 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E452FC21A9A6CE1008EC352 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E452FD01A9A6CE1008EC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E452FD11A9A6CE1008EC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E452FD31A9A6CE1008EC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TouchID Door Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E452FD41A9A6CE1008EC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TouchID Door Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E452FD61A9A6CE1008EC352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TouchID Door ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchID Door Controller.app/TouchID Door Controller";
+			};
+			name = Debug;
+		};
+		5E452FD71A9A6CE1008EC352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TouchID Door ControllerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchID Door Controller.app/TouchID Door Controller";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E452FAE1A9A6CE1008EC352 /* Build configuration list for PBXProject "TouchID Door Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E452FD01A9A6CE1008EC352 /* Debug */,
+				5E452FD11A9A6CE1008EC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E452FD21A9A6CE1008EC352 /* Build configuration list for PBXNativeTarget "TouchID Door Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E452FD31A9A6CE1008EC352 /* Debug */,
+				5E452FD41A9A6CE1008EC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E452FD51A9A6CE1008EC352 /* Build configuration list for PBXNativeTarget "TouchID Door ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E452FD61A9A6CE1008EC352 /* Debug */,
+				5E452FD71A9A6CE1008EC352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E452FAB1A9A6CE1008EC352 /* Project object */;
+}
