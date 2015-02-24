@@ -13,6 +13,9 @@
 		5E452FC01A9A6CE1008EC352 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E452FBF1A9A6CE1008EC352 /* Images.xcassets */; };
 		5E452FC31A9A6CE1008EC352 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E452FC11A9A6CE1008EC352 /* LaunchScreen.xib */; };
 		5E452FCF1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E452FCE1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift */; };
+		5EC8C35F1A9B8601006153F1 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC8C35E1A9B8601006153F1 /* CoreBluetooth.framework */; };
+		5EC8C3651A9B87F7006153F1 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8C3641A9B87F7006153F1 /* BLE.m */; };
+		5ECB3F9D1A9CEB2300FA64EC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ECB3F9C1A9CEB2300FA64EC /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 		5E452FC81A9A6CE1008EC352 /* TouchID Door ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchID Door ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E452FCD1A9A6CE1008EC352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E452FCE1A9A6CE1008EC352 /* TouchID_Door_ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchID_Door_ControllerTests.swift; sourceTree = "<group>"; };
+		5EC8C35E1A9B8601006153F1 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5EC8C3621A9B87F7006153F1 /* TouchID Door Controller-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchID Door Controller-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		5EC8C3631A9B87F7006153F1 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLE.h; path = "TouchID Door Controller/BLE.h"; sourceTree = "<group>"; };
+		5EC8C3641A9B87F7006153F1 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLE.m; path = "TouchID Door Controller/BLE.m"; sourceTree = "<group>"; };
+		5EC8C3661A9B885A006153F1 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLEDefines.h; path = "TouchID Door Controller/BLEDefines.h"; sourceTree = "<group>"; };
+		5ECB3F9C1A9CEB2300FA64EC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECB3F9D1A9CEB2300FA64EC /* LocalAuthentication.framework in Frameworks */,
+				5EC8C35F1A9B8601006153F1 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				5E452FB51A9A6CE1008EC352 /* TouchID Door Controller */,
+				5EC8C3611A9B871A006153F1 /* BLE_Framework */,
+				5EC8C3601A9B86F7006153F1 /* Frameworks */,
 				5E452FCB1A9A6CE1008EC352 /* TouchID Door ControllerTests */,
 				5E452FB41A9A6CE1008EC352 /* Products */,
 			);
@@ -90,6 +103,7 @@
 		5E452FB61A9A6CE1008EC352 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5EC8C3621A9B87F7006153F1 /* TouchID Door Controller-Bridging-Header.h */,
 				5E452FB71A9A6CE1008EC352 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +124,25 @@
 				5E452FCD1A9A6CE1008EC352 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EC8C3601A9B86F7006153F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ECB3F9C1A9CEB2300FA64EC /* LocalAuthentication.framework */,
+				5EC8C35E1A9B8601006153F1 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EC8C3611A9B871A006153F1 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5EC8C3631A9B87F7006153F1 /* BLE.h */,
+				5EC8C3641A9B87F7006153F1 /* BLE.m */,
+				5EC8C3661A9B885A006153F1 /* BLEDefines.h */,
+			);
+			name = BLE_Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +194,7 @@
 				TargetAttributes = {
 					5E452FB21A9A6CE1008EC352 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 469HVZP899;
 					};
 					5E452FC71A9A6CE1008EC352 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC8C3651A9B87F7006153F1 /* BLE.m in Sources */,
 				5E452FBB1A9A6CE1008EC352 /* ViewController.swift in Sources */,
 				5E452FB91A9A6CE1008EC352 /* AppDelegate.swift in Sources */,
 			);
@@ -338,9 +373,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "TouchID Door Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchID Door Controller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +387,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "TouchID Door Controller/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TouchID Door Controller-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +449,7 @@
 				5E452FD41A9A6CE1008EC352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E452FD51A9A6CE1008EC352 /* Build configuration list for PBXNativeTarget "TouchID Door ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +458,7 @@
 				5E452FD71A9A6CE1008EC352 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
