@@ -51,8 +51,12 @@ class ViewController: UIViewController, BLEDelegate, UIAlertViewDelegate {
             if context.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
                 context.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: "Please verify your identity to open a door", reply: { (success:Bool, error:NSError!) -> Void in
                     if error != nil {
-                        var alert:UIAlertView = UIAlertView(title: "Error", message: "There was a problem verifying your identity. Please try again.", delegate: nil, cancelButtonTitle: "Ok")
-                        alert.show()
+                        if error.code == LAError.UserFallback.rawValue {
+                            self.showPinAuthForm()
+                        } else {
+                            var alert:UIAlertView = UIAlertView(title: "Error", message: "There was a problem verifying your identity. Please try again.", delegate: nil, cancelButtonTitle: "Ok")
+                            alert.show()
+                        }
                         return
                     }
                     if success {
@@ -63,13 +67,17 @@ class ViewController: UIViewController, BLEDelegate, UIAlertViewDelegate {
                     }
                 })
             } else {
-                var authAlert:UIAlertView = UIAlertView(title: "Please enter the PIN code", message: "", delegate: self, cancelButtonTitle: "Cancel", otherButtonTitles: "Authenticate")
-                authAlert.tag = 1
-                // Options: UIAlertViewStyleDefault, UIAlertViewStyleSecureTextInput, UIAlertViewStylePlainTextInput, UIAlertViewStyleLoginAndPasswordInput
-                authAlert.alertViewStyle = UIAlertViewStyle.SecureTextInput
-                authAlert.show()
+                self.showPinAuthForm()
             }
         }
+    }
+    
+    func showPinAuthForm() {
+        var authAlert:UIAlertView = UIAlertView(title: "Please enter the PIN code", message: "", delegate: self, cancelButtonTitle: "Cancel", otherButtonTitles: "Authenticate")
+        authAlert.tag = 1
+        // Options: UIAlertViewStyleDefault, UIAlertViewStyleSecureTextInput, UIAlertViewStylePlainTextInput, UIAlertViewStyleLoginAndPasswordInput
+        authAlert.alertViewStyle = UIAlertViewStyle.SecureTextInput
+        authAlert.show()
     }
     
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
