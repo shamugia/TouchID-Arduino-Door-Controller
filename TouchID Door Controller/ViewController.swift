@@ -12,7 +12,7 @@ import LocalAuthentication
 
 class ViewController: UIViewController, BLEDelegate, UIAlertViewDelegate {
     
-    let AUTH_PIN:String = "1712";
+    let AUTH_PIN:String = "1712"
     
     var ble_device:BLE?
     
@@ -152,7 +152,11 @@ class ViewController: UIViewController, BLEDelegate, UIAlertViewDelegate {
     
     func bleDidReceiveData(data: UnsafeMutablePointer<CChar>, length: Int32) {
         if let str:NSString = String.fromCString(data) {
-            var alert:UIAlertView = UIAlertView(title: "Request Status", message: str, delegate: nil, cancelButtonTitle: "OK")
+            var msg:String = "Wrong request.\nUnable to open the door."
+            if str == "O" {
+                msg = "Success. Door is open."
+            }
+            var alert:UIAlertView = UIAlertView(title: "Request Status", message: msg, delegate: nil, cancelButtonTitle: "OK")
             alert.show()
         }
     }
