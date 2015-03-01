@@ -27,7 +27,7 @@ class ViewController: UIViewController, BLEDelegate, UIAlertViewDelegate {
         super.viewDidLoad()
         
         preloader = UIActivityIndicatorView(frame: CGRectMake(0, 0, 80, 80));
-        preloader.layer.cornerRadius = 5 //.5
+        preloader.layer.cornerRadius = 5
         preloader.opaque = false
         preloader.backgroundColor = UIColor(white: 0.0, alpha: 0.6)
         preloader.center = self.view.center
